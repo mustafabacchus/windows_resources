@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html id="rootHtml" dir="ltr"><head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ms.locale" content="en-us">
+<meta name="ms.site" content="Microsoft.com">
+<meta name="product" content="Microsoft Dynamics CRM" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../dynamics/crm/content/images/favicon.ico?v=2" />
+
+<link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css">
+<link type="text/css" rel="Stylesheet" href="../../../dynamics/crm/content/styles/site_global_footer_ltr.css"/>
+<link type="text/css" rel="Stylesheet" href="../../../dynamics/crm/content/styles/site_global_content_ltr.css?v=2"/>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="//ajax.aspnetcdn.com/ajax/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Third party scripts or code, linked to, called or referenced from this web site or product, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx --><link type="text/css" rel="Stylesheet" href="../../../dynamics/crm/content/styles/global_display_none.css"/><title>
+	Import accounts, leads, or other data | Microsoft Dynamics 365
+</title><meta name="ms.topicid" content="dee40fe5-1942-4521-986f-714edfd36433" /><meta name="ms.topic" content="article" /><meta name="ms.date" content="2016-11-01" /><meta name="ms.prod" /><meta name="ms.service" content="crm-online" /></head><body><form name="main" method="post" action="import-accounts-leads-or-other-data.aspx" id="main">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTk4Njg0ODUzMWRkE2A+8RrPLxli3vtgu3umB7NGt9M=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6403BFD1" />
+</div><div class="container"><span id="lblHeader"><div class="row black">
+	<div class="col-xs-12 brand">Dynamics 365</div>
+</div>
+<div id="helpHead" class="row">
+	<div id="headNear" class="col-xs-8 col-sm-5">
+		<div class="lowHead">Help &amp; Training</div>
+	</div>
+	<div id="auheadFar" class="col-xs-4 col-sm-2">
+		<div class="help_head_icon">
+			<a href="contents.aspx" id="contentsLink">
+				<img src="../../../dynamics/crm/content/images/contents_icon.png" alt="Contents" />
+			</a>
+		</div>
+		<div class="help_head_icon">
+			<a href="default.aspx" id="homeLink">
+				<img src="../../../dynamics/crm/content/images/Home-button-Microsoft-CRM.png" alt="Dynamics 365 Help &amp; Training Home" />
+			</a>
+		</div>
+	</div>
+	<div id="auheadSearch" class="col-xs-12 col-sm-5">
+		<div id="search_box_span">
+			<input name="searchText" type="text" id="searchText" placeholder="Search Help &amp; Training" />
+			<img id="searchBtn" title="Search" alt="Search" src="../../../dynamics/crm/content/images/search-icon.png" data-search="0" />
+		</div>
+	</div>
+</div></span><span id="lblContent"><div id="contentDiv" class="row"><div id="content" class="col-xs-12 col-md-9 col-lg-9"><h1>Import accounts, leads, or other data</h1><div class="intro"><p>Whether your data is stored in spreadsheets, databases, or other systems, you’ll probably want to import the data into Microsoft Dynamics 365 so you can keep track of all your customer information in one place.</p><p>You can import any type of information, such as accounts, leads, or opportunities – even activities or cases. (The different types of information are called “record types.”)</p><hr class="alertRuleTop" /><div class="alert"><p class="alertHead">Note </p><p>Your import will fail if you use a template that you exported from Dynamics 365, add a new column to it, and then try to import the data back into Dynamics 365 (online).</p></div><hr class="alertRuleBottom" /><hr class="alertRuleTop" /><div class="alert"><p class="alertHead">Note </p><p>Want to import contacts? More information:  <a href="import-contacts.aspx">Import contacts</a></p></div><hr class="alertRuleBottom" /></div><div class="section2"><a class="expand" id="tID0ECA" onclick="showHide(dID0ECA,1)"><h2 class="heading2"><img id="iID0ECA" src="../../../dynamics/crm/content/images/Help-Collapse-Section-Microsoft-CRM.png" />Step 1: Get your import file ready</h2></a><div id="dID0ECA" class="hiddenContent"><p>First, you’ll need to get your data into a file.</p><p>Make sure your data is as complete and accurate as possible when you create the import file. Fill in any missing info, and verify that names and other information are spelled correctly.</p><p>These file formats are supported:</p><ul><li><p>Comma-separated values (.csv)</p></li><li><p>Text (.txt)</p></li><li><p>Compressed (.zip) </p></li><li><p>Excel Spreadsheet 2003 (.xml)</p></li><li><p>Excel Workbook (.xlsx)</p></li></ul><p>The maximum file size allowed for .zip files is 32 MB. For the other file formats, the maximum file size allowed is 8 MB.</p><hr class="alertRuleTop" /><div class="alert"><p class="alertHead">Tip </p><p>If you need to import a larger amount of data, check out <a target="_blank" href="https://msdn.microsoft.com/library/gg328321.aspx">MSDN: Import data</a> for additional details.</p><p>You can add multiple import files to a single .zip file, and then import the .zip file to bring in all the files at once. For example, if several salespeople enter leads from a tradeshow into different spreadsheets, you can gather them into one .zip file for import.</p><p>For best results, it’s a good idea to make sure you (or your Dynamics 365 admin, if that’s someone else) have some rules in place to reduce any duplicates when you import the data (called “duplicate detection rules”). More information:  <a href="set-up-duplicate-detection-rules-to-keep-your-data-clean.aspx">Set up duplicate detection rules to keep your data clean</a></p></div><hr class="alertRuleBottom" /></div></div><div class="section2"><a class="expand" id="tID0EBA" onclick="showHide(dID0EBA,1)"><h2 class="heading2"><img id="iID0EBA" src="../../../dynamics/crm/content/images/Help-Collapse-Section-Microsoft-CRM.png" />Step 2: Run the Import Data wizard</h2></a><div id="dID0EBA" class="hiddenContent"><p>You’ll use the <b>Import Data</b> wizard to import the file. </p><ol class="stepsOl"><li class="stepLi"><p>Go to <b>Settings</b> &gt; <b>Data Management</b>.</p></li><li class="stepLi"><p>Choose <b>Imports</b> &gt; <b>Import Data</b>.</p></li><li class="stepLi"><p>Browse to the folder where you saved the file that contains the import file. Select the file, and then choose <b>Open</b>. Then, choose <b>Next</b>. </p><hr class="alertRuleTop" /><div class="alert"><p class="alertHead">Tip </p><p>You can import only one file at a time. To bring in more files, run the wizard again later, or add all your import files to a single .zip file.</p></div><hr class="alertRuleBottom" /></li><li class="stepLi"><p>Review the file name, and if the file is in .xlsx, .xml, .csv, .txt or .zip format, verify that the field and data delimiters are correct. Then, choose <b>Next</b>.</p><hr class="alertRuleTop" /><div class="alert"><p class="alertHead">Note </p><p>In most cases, you can accept the default delimiters.</p></div><hr class="alertRuleBottom" /></li><li class="stepLi"><p>Select how the wizard determines which fields to use for the data.</p><ul><li><p>Select <b>Default (Automatic Mapping)</b> if you want the wizard to determine the corresponding fields in Microsoft Dynamics 365 automatically. If the wizard can’t find a field, you’ll have the opportunity to “map” it yourself. <br /><br />-- OR --<br /></p></li><li><p>Select <b>For Generic Contact and Account Data</b> if your import file contains contacts and accounts (and contacts are the main type of data). <br /><br />-- OR --<br /></p></li><li><p>Select <b>For BCM 2010</b> if your import file contains your contacts from Microsoft Outlook 2010 with Business Contact Manager. <br /><br />-- OR --<br /></p></li><li><p>If available for your organization, select a custom data map. (You’ll see them in the list if they’re available to you.)</p></li></ul></li><li class="stepLi"><p>Choose <b>Next</b>.</p></li><li class="stepLi"><p>If prompted, in the Microsoft Dynamics 365<b>Record Types</b> drop-down list, select the type of records you are importing, for example <b>Account</b> or <b>Lead</b>. Then, choose <b>Next</b>. </p></li><li class="stepLi"><p>For any record type with an alert icon, map the field from your import file to a corresponding field in Microsoft Dynamics 365. Scroll to see the whole list. Then, choose <b>Next</b>. </p></li><li class="stepLi"><p>Review the summary, and then choose <b>Next</b>.</p></li><li class="stepLi"><p>Select additional import settings.</p><ul><li><p>If it’s okay for the Import Data wizard to import duplicate records, in the <b>Allow Duplicates</b> section, select <b>Yes</b>. </p><hr class="alertRuleTop" /><div class="halert"><p class="alertHead">Caution </p><p>In most cases, to avoid importing duplicate information, you should keep this option set to <b>No</b>.</p></div><hr class="alertRuleBottom" /></li><li><p>To set who owns the imported records, in the <b>Select Owner for the Imported Records</b> section, choose the <b>Lookup</b> button <img src="crm_ua_lookup_v4.gif" title="Lookup button" class="icon" />. Select <b>Look Up More Records</b>, type the person’s name, and then choose <b>Add</b>.</p><hr class="alertRuleTop" /><div class="alert"><p class="alertHead">Note </p><p>How do you decide who should “own” the imported data? Usually, the owner is the person responsible for taking action on the data. Here’s an example: If your import file contains contacts you collected at a trade show and you want to assign a user to follow up with these contacts, select that person for the owner. To assign someone other than yourself as the owner of the imported records, your security role must include permissions to create records for the user. If you don’t have sufficient permissions, the wizard assigns you as the owner of the imported records by default.</p></div><hr class="alertRuleBottom" /></li><li><p>To save these import settings so you can use them again, enter a name for the settings (called a “data map”).</p><p>The next time you run the Import Data wizard, you’ll see the new data map listed under <b>Custom Maps</b>.</p></li></ul></li><li class="stepLi"><p>Choose <b>Submit</b>.</p></li><li class="stepLi"><p>To verify that the wizard was successful, choose <b>Imports</b>, and then review the report. Otherwise, choose <b>Finish</b>.</p></li></ol></div></div></div><div id="rightDiv" class="col-xs-12 col-md-3 col-lg-3"><div class="appliesTo"><p class="applyHead">Applies To</p><p class="applyValue">Dynamics 365 (online)</p><p class="applyValue">Dynamics 365 (on-premises)</p><p class="applyValue">Dynamics CRM Online</p><p class="applyValue">Dynamics CRM 2016</p><p class="applyValue">Dynamics CRM 2015</p><p class="applyValue">Dynamics CRM 2013</p></div><div class="relatedTopics"><p class="relatedTopicsHead">See Also</p><p><a href="import-contacts.aspx">Import contacts</a></p><p><a target="_blank" href="https://msdn.microsoft.com/library/gg328321.aspx">MSDN: Import data</a></p></div></div></div></span><span id="lblFeedback"><div id="openFeedbackContainer" style="z-index:220; position:relative;" class="row"></div>
+<script id="open-rating-id" type="text/javascript" src="https://open-rating.azureedge.net/open-rating.entry.min.js" data-requires="jQuery"></script>
+</span><span id="lblFooter"><footer id="lblFooter">
+	<div id="footer_container" class="row">
+		<div id="main_footer">
+			<div class="nearCell col-xs-12 col-sm-3">
+				<ul>
+    
+    
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=270870">Setup &amp; Administration</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=526629">Developer Center</a>
+      </li>
+    
+  </ul>
+			</div>
+			<div class="midCellLeft col-xs-12 col-sm-3">
+				<ul>
+    
+    
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=394323">Dynamics 365 Help Center</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=394324">Marketing Help Center</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=394325">Social Engagement Help Center</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=526627">Parature Knowledgebase</a>
+      </li>
+    <li><a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=824624">Gamification Help Center</a></li><li><a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=824625">Customer Insights Help Center</a></li>
+  </ul>
+			</div>
+			<div class="midCellRight col-xs-12 col-sm-3">
+				<ul>
+    
+    
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=825366">YouTube</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=825367">Forums</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=825368">Community</a>
+      </li>
+    
+  </ul>
+			</div>
+			<div class="farCell col-xs-12 col-sm-3">
+				<ul>
+    
+    
+      
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=325003">Product Ideas</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=824626">Trial</a>
+      </li>
+      <li>
+        <a class="footerLink" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkId=394391">Support</a>
+      </li>
+    
+  </ul>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+		<div id="lower_far_footer" class="row">
+			<div class="col-lg-12">
+				<img src="../../../dynamics/crm/content/images/MSFT_logotype_rgb_CG1167x17.png" style="width: 67px; height: 17px;" />
+				<br />
+    
+    
+      
+        
+          <a href="http://go.microsoft.com/fwlink/p/?LinkID=324998" class="followicon" target="_blank"><img src="../../../dynamics/crm/content/images/FacebookIcon.png" title="Facebook symbol" /></a>
+        
+      
+      
+        
+          <a href="http://go.microsoft.com/fwlink/p/?LinkID=324999" class="followicon" target="_blank"><img src="../../../dynamics/crm/content/images/Twittericon.png" title="Twitter symbol" /></a>
+        
+      
+      
+        
+          <a href="http://go.microsoft.com/fwlink/p/?LinkId=403365" class="followicon" target="_blank"><img src="../../../dynamics/crm/content/images/Youtubeicon.png" title="YouTube symbol" /></a>
+        
+      
+      
+        
+          <a href="http://go.microsoft.com/fwlink/p/?LinkID=325000" class="followicon" target="_blank"><img src="../../../dynamics/crm/content/images/linkedinicon.png" title="LinkedIn symbol" /></a>
+        
+      
+      
+        <a class="linkBlock" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=271658">Privacy &amp; Cookies</a>
+      
+      
+        <a class="linkBlock" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=271660">Terms of Use</a>
+      
+      
+        <a class="linkBlock" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=276853">Trademarks</a>
+      
+      
+        <a class="linkBlock" target="_blank" href="http://go.microsoft.com/fwlink/p/?LinkID=271661">© 2017 Microsoft. All rights reserved.</a>
+      
+    
+  </div>
+		</div>
+	</div>
+</footer></span><span id="lblMiniContents"></span><span id="divTrack"><script type="text/JavaScript"> 
+var varSegmentation = 0; 
+var varClickTracking = 1; 
+var varCustomerTracking = 1; 
+var varAutoFirePV = 1; 
+var Route = "LE044"; 
+var Ctrl = "SS502"; 
+document.write("<script type='text/javascript' src='" + (window.location.protocol) + "//c.microsoft.com/ms.js'" + "'><\/script>"); 
+</script> <noscript><img alt="" width="1" height="1" src="//c.microsoft.com/trans_pixel.aspx"/></noscript> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../../../dynamics/crm/content/scripts/site_crm.js?v=2"></script>
+<script type="text/javascript" src="../../../dynamics/crm/content/scripts/crm.search.js"></script>
+<script type="text/javascript" src="../../../dynamics/crm/content/scripts/site_feedback.js"></script></span></div></form></body></html>
